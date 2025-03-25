@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🛒 Filterable Product Table (React.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and **fully responsive** product table built using **React.js**. This project allows users to filter products by name and stock availability. It is inspired by the [React Docs](https://react.dev/) and helped me understand UI structuring and component-based development.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Screenshot
+![Product Table UI](image/image.png)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Check out the live version of the project here: **[Product-table](https://product-table-gamma.vercel.app/)**  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Features
+✅ Search products by name  
+✅ Filter only in-stock products  
+✅ Categorized product listing  
+✅ Clean and interactive UI  
+✅ Fully responsive design  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Technologies Used
+- **React.js**
+- **CSS (Flexbox, Grid)**
+- **Hooks (useState)**
+- **JSX**
+  
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📖 What I Learned  
+This project helped me understand:  
+- Component-based development in React  
+- Props and state management  
+- Event handling in React  
+- Filtering data dynamically  
+- Building a clean and user-friendly UI  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚧 Future Improvements  
+🔹 UI enhancements (better styling, animations)  
+🔹 Add sorting feature  
+🔹 Improve accessibility  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💻 Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1⃣ Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/yourusername/filterable-product-table.git
+```
 
-## Learn More
+2⃣ Navigate to the project directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd filterable-product-table
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3⃣ Install dependencies:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4⃣ Run the development server:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app will be running on `http://localhost:3000`
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🎯 Contributing
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork this repository and open a pull request with improvements! 🚀

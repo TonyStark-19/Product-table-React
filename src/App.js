@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+// filterable product table function
+
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
@@ -22,6 +24,8 @@ function FilterableProductTable({ products }) {
   );
 }
 
+// category row
+
 function ProductCategoryRow({ category }) {
   return (
     <tr>
@@ -32,6 +36,8 @@ function ProductCategoryRow({ category }) {
   );
 }
 
+// product row
+
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
     <span style={{ color: 'red' }}>
@@ -39,17 +45,20 @@ function ProductRow({ product }) {
     </span>;
 
   return (
-    <tr>
+    <tr className='list'>
       <td>{name}</td>
       <td>{product.price}</td>
     </tr>
   );
 }
 
+// product table function
+
 function ProductTable({ products, filterText, inStockOnly }) {
   const rows = [];
   let lastCategory = null;
 
+  // search functionality
   products.forEach((product) => {
     if (
       product.name.toLowerCase().indexOf(
@@ -79,7 +88,7 @@ function ProductTable({ products, filterText, inStockOnly }) {
   return (
     <table className='table'>
       <thead>
-        <tr  className='category'>
+        <tr className='heading'>
           <th>Name</th>
           <th>Price</th>
         </tr>
@@ -89,6 +98,8 @@ function ProductTable({ products, filterText, inStockOnly }) {
   );
 }
 
+// search bar
+
 function SearchBar({
   filterText,
   inStockOnly,
@@ -97,10 +108,12 @@ function SearchBar({
 }) {
   return (
     <form>
-      <input
-        type="text"
-        value={filterText} placeholder="Search..."
-        onChange={(e) => onFilterTextChange(e.target.value)} />
+      <div className='input-box'>
+        <input
+          type="text"
+          value={filterText} placeholder="Search..."
+          onChange={(e) => onFilterTextChange(e.target.value)} />
+      </div>
       <label>
         <input
           type="checkbox"
@@ -113,6 +126,8 @@ function SearchBar({
   );
 }
 
+// product list
+
 const PRODUCTS = [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
   { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
@@ -121,6 +136,8 @@ const PRODUCTS = [
   { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
   { category: "Vegetables", price: "$1", stocked: true, name: "Peas" }
 ];
+
+// export function
 
 export default function App() {
   return <FilterableProductTable products={PRODUCTS} />;

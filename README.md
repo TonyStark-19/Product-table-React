@@ -54,7 +54,7 @@ This project helped me understand:
 1⃣ Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/filterable-product-table.git
+git clone https://github.com/TonyStark-19/filterable-product-table.git
 ```
 
 2⃣ Navigate to the project directory:
